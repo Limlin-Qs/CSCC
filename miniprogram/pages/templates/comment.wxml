@@ -1,0 +1,11 @@
+<!--pages/templates/comment.wxml-->
+<view class="box">
+  <view class="title">评论区模板</view>
+  <import src='template.wxml' />
+  <template is="comment" data="{{...user01}}" />
+  -------------------------
+  <template is="comment" data="{{...user02}}" />
+  -------------------------
+  <template is="comment" data="{{nickname: 'carry', age: '5', gender: 'female'}}" />
+  -------------------------
+</view>

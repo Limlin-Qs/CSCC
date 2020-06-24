@@ -1,0 +1,8 @@
+<!--pages/type/purchase/ro.wxml-->
+<view class="box">
+  <view class="title">矿石</view>
+  <import src='../purchase/template.wxml' />
+  <template is="purchase" data="{{type}}" />
+  <template is="purchase" data="{{src}}" />
+  -------------------------
+</view>

@@ -1,0 +1,11 @@
+<!--pages/index/analysis/analysis.wxml-->
+<view class="box">
+  <text>可视化分析</text>
+  <view>
+   <canvas canvas-id="myCanvas" class="myCanvas"></canvas>
+  </view>
+  <view class="btyLayout">
+    <button type="primary" bindtap="DrawPie">画扇形图</button>
+  </view>
+</view>
+

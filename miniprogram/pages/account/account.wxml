@@ -1,0 +1,38 @@
+<!--pages/account/account.wxml-->
+<view class='box'>
+  <view class='title'>我的账号</view>
+  <!--账号信息-->
+  <view class="info">
+    <view class="profile" style="background-color:{{color}}"></view>
+    <view class="nickname">
+      <view wx:if="{{color == 'red'}}">Red</view>
+      <view wx:elif="{{color == 'green'}}">Leaf</view>
+      <view wx:else>Another</view>
+    </view>
+  </view>
+  <!-- 订货专栏 -->
+  <view class='feature1'>
+    <view class="row">
+      <view class="tradebox">我的订单</view>
+      <view class="tradebox">交易记录</view>
+    </view>
+    <view class="row">
+      <view class="tradebox">评价</view>
+      <view class="tradebox">收藏</view>
+    </view>
+  </view>
+  <!-- 设计专栏 -->
+  <view class='feature2' style='display:flex;flex-direction:column;line-height:300rpx '>
+
+  </view>
+  <!-- 通用服务 -->
+  <view class='feature3'>
+    <navigator url="../account/set/set">
+      <view class="setting">设置</view>
+    </navigator>
+  </view>
+  <button>退出登录</button>
+  <view class="btn-area" id="buttonContainer">
+    <button type="primary" open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">登录</button>
+  </view>  
+</view>

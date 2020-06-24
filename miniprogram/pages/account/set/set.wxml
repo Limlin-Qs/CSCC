@@ -1,0 +1,15 @@
+<!--pages/account/set/set.wxml-->
+<view class="box">
+  <view class="waikuang">
+    <text>字体大小</text>
+    <slider data-color="b" value="{{b}}" max='255' block-color='grey' show-value="true" bindchanging="colorChanging"></slider>
+  </view>
+  <view class="waikuang">
+    <text>夜晚模式</text>
+    <switch checked='{{skin}}' bindchange="" />
+  </view>
+  <view class="waikuang">
+    <text>清除缓存</text>
+  </view>
+
+</view>

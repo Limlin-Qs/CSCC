@@ -1,0 +1,12 @@
+<!-- pages/index/header.wxml -->
+<view class="header">
+  <navigator url="../index/analysis/analysis">
+    <view>行业分析</view>
+  </navigator>
+  <navigator url="../index/news/news">
+    <view>最新资讯</view>
+  </navigator>
+  <navigator url="../index/designer/designer">
+      <view>人才招聘</view>
+  </navigator>
+</view>

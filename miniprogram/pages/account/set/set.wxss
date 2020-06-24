@@ -1,0 +1,7 @@
+/* pages/account/set/set.wxss */
+.waikuang {
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid gray ;
+}

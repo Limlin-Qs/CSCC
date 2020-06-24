@@ -1,0 +1,30 @@
+<!--pages/type/categories.wxml-->
+<view class="title">分类</view>
+<navigator url='../type/purchase/fv'>
+  <view class='frame'>
+    <icon type='success' class="myleft"></icon>
+    <view class="mycenter">果蔬</view>
+    <image src="/pic/icon0.jpg" class="myright"></image>
+  </view>
+</navigator>
+<navigator url='../type/purchase/ma'>
+  <view class='frame'>
+    <icon type='success' class="myleft"></icon>
+    <view class="mycenter">机械</view>
+    <image src="/pic/icon0.jpg" class="myright"></image>
+  </view>
+</navigator>
+<navigator url='../type/purchase/cl'>
+  <view class='frame'>
+    <icon type='success' class="myleft"></icon>
+    <view class="mycenter">布料</view>
+    <image src="/pic/icon0.jpg" class="myright"></image>
+  </view>
+</navigator>
+<navigator url='../type/purchase/ro'>
+  <view class='frame'>
+    <icon type='success' class="myleft"></icon>
+    <view class="mycenter">矿石</view>
+    <image src="/pic/icon0.jpg" class="myright"></image>
+  </view>
+</navigator>

@@ -1,0 +1,9 @@
+<!--pages/type/purchase/ma.wxml-->
+<view class="box">
+  <view class="title">机械</view>
+  <import src='../purchase/template.wxml' />
+  <template is="purchase" data="{{type}}" />
+  <template is="purchase" data="{{src}}" />
+
+  -------------------------
+</view>

@@ -1,0 +1,65 @@
+<!--pages/account/signup/signup.wxml-->
+<view class="box">
+   <view class="lineLayout">
+    <view>电子邮箱</view>
+    <input placeholder="inputemail" bindinput="nameInput" name="email" value="{{getEmail}}"></input>
+  </view>
+  <view class="lineLayout">
+    <view>输入密码：</view>
+    <input type="password" name="password" value="{{getPwd}}"></input>
+  </view>   
+  <view class="lineLayout">
+    <view>确认密码：</view>
+    <input type="password" name="confirm" value="{{getPwdConfirm}}"></input>
+    <button type="primary" form-type="submit">登录</button>
+    <view>
+      <view class="txt">{{showMsg01}}</view>
+      <view class="txt">{{showMsg02}}</view>
+    </view>
+  </view>
+</view>
+<view class="box">
+  <view class="title">注册信息填写</view>
+  <view class="profile">上传头像</view>
+  <view class="lineLayout">
+    <view>昵称</view>
+    <input placeholder="请输入昵称" bindinput="nameInput"></input>
+  </view>
+  <picker bindchange="pickerSex" range="{{gender}}">
+    <view>性别: {{sex}}</view>
+  </picker>  
+  <picker mode="region" bindchange="{{pickerRegion}}">
+    <view>地址: {{location}}</view>
+  </picker>
+ <picker mode="date" start="1900-01-01" end="2100-12-31" bindchange="pickerDate">
+    <view>生日: {{birthDay}}</view>
+  </picker>
+  <view class="lineLayout">
+    <view>手机号码：</view>
+    <input type="number" bindinput="numInput" placeholder='+xx xxxxxxxxxxx'></input>
+  </view>
+    <view class="lineLayout">
+    <view>电子邮箱：</view>
+    <input type="number" bindinput="emailInput" placeholder='xxx@xx.com'></input>
+  </view>
+</view>
+
+<view class="box">
+  <text style="font-weight:{{myBold}}; font-style:{{myItalic}}; text-decoration: {{myUnderline}}; font-size='myFontSize'">请填写相关的注册信息。</text>
+  <form>
+    <input name='nickname'></input>
+    <checkbox-group bindchange='checkboxChange'>
+      <checkbox value="Male">男</checkbox>
+      <checkbox value="Female">女</checkbox>
+    </checkbox-group>
+    <radio-group bindchange='radioChange'>
+      <radio value="doctor">博士后</radio>
+      <radio value="phd">博士</radio>
+      <radio value="master">硕士</radio>
+      <radio value="scholar">学士</radio>
+      <radio value="else">其他</radio>
+    </radio-group>
+    <button name='upload'>提交</button>
+  </form>
+  
+</view>

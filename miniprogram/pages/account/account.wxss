@@ -1,0 +1,45 @@
+/* pages/account/account.wxss */
+.info {
+  margin: 10px 0;
+  display: flex;
+}
+.profile {
+  height: 80px;
+  width: 80px;
+  border-radius: 20px;
+  margin-right: 20px;
+}
+.nickname {
+  float: left;
+  margin: auto 0;
+}
+.feature1 {
+  border: 10px solid #BEEDC7;
+  margin: 10px auto;
+  display:flex;
+  height:200px;
+  text-align:center;
+}
+.row {
+  flex: auto;
+  margin: auto auto;
+}
+.tradebox {
+  width: 140px;
+  background-color: #19CAAD;
+  border-radius: 20px;
+  line-height:80px;
+  margin: 10px 8px;
+}
+.feature3 {
+  display:flex;
+  flex-direction:column;
+  line-height:300rpx
+}
+.setting {
+  background-color:gray;
+  border-radius: 10px;
+  height:100rpx;
+  line-height:100rpx;
+  text-align: center;
+}

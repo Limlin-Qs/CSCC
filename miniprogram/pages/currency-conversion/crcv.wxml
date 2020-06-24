@@ -1,0 +1,28 @@
+<!--pages/currency-conversion/crcv.wxml-->
+<view class="box">
+  <view class="title">货币兑换</view>
+  <form bindsubmit="calc" bindreset="reset">
+    <input name='cels' placeholder="请输入人民币价格" type='number' auto-focus="true"></input>
+    <view class="btnLayout">
+      <button type='primary' form-type='submit'>计算</button>
+      <button type='primary' form-type='reset'>清除</button>
+    </view>
+    <view class="textLayout">
+      <text>兑换美元为：{{M}}</text>    
+      <text>兑换英镑为：{{Y}}</text>    
+      <text>兑换港币为：{{G}}</text>    
+      <text>兑换欧元为：{{O}}</text>    
+      <text>兑换韩元为：{{H}}</text>    
+      <text>兑换日元为：{{R}}</text>    
+    </view>
+  </form>
+</view>
+<view class="box">
+  <view class="title">求和</view>
+  <view>
+    <input placeholder="起始" type="number" bindtap="calc1"></input>
+    <input placeholder="终点" type="number" bindtap="calc1"></input>
+  </view> 
+  <view>序列累加和为:{{sum}}</view>
+  <button type="primary" bindtap='calc1'>求和</button>
+</view>

@@ -1,0 +1,9 @@
+<!--pages/type/purchase/cl.wxml-->
+<view class="box">
+  <view class="title">衣织</view>
+  <import src='../purchase/template.wxml' />
+  <template is="purchase" data="{{type}}" />
+  <template is="purchase" data="{{src}}" />
+
+  -------------------------
+</view>

@@ -1,0 +1,17 @@
+<!--pages/transport/transport.wxml-->
+<view class="box">
+  <view class="title">交通货运</view>
+  <map id="myMap" latitude="{{latitude}}" longitude="{{longitude}}" markers="{{markers}}" show-location=""></map>
+  <input placeholder="出发地" placeholder-class="placeholder" bindinput="Input0" type="text"></input>
+  <input placeholder="目的地" placeholder-class="placeholder" bindinput="Input1" type="text"></input>
+  <input placeholder="货运方式" placeholder-class="placeholder" bindinput="Input2" type="text"></input>
+  <button bindtap="mysubmit">提交</button>
+  <!-- 此处要实现页面跳转，做出导航路线和地图显示，地图页面的功能需要进一步完善，
+  可能是页面超出了上限，再建立新页面无法使用导航跳转。-->
+  <view hidden="{{flag}}" class="content">
+    <view class="content-item">出发地：{{setoff}}</view>
+    <view class="content-item">目的地：{{aim}}</view>
+    <view class="content-item">货运方式：{{way}}</view>
+    <view class="content-item">价格：{{price}}</view>
+  </view>
+</view>

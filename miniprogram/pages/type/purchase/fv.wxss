@@ -1,0 +1,19 @@
+/* pages/type/fv/fv.wxss */
+input {
+  border: 1px solid gray;
+}
+.window {
+  border: 1px solid #BEEDC7;
+  width: 50%;
+}
+.imgLayout {
+  text-align: center;
+  margin: 5px 0;
+}
+image {
+  position: relative;
+  vertical-align: middle;
+  width: 110px;
+  height: 110px;
+  background-color: #eee;
+}

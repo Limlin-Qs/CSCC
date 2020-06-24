@@ -1,0 +1,4 @@
+<!-- pages/index/header.wxml -->
+<view class="footer">
+  版权所有 @安西宁的工作室 | 合作网址：https：//www.acode.com
+</view>

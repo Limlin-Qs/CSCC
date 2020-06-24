@@ -1,0 +1,22 @@
+/* pages/type/categories.wxss */
+navigator{
+  margin: 5px;
+  font-style: 20px;
+}
+.frame{
+  display: flex;
+  flex-direction: row;
+  margin: 5px 0px;
+  padding: 5px 0px;
+}
+.myleft{
+  margin-right: 10px;
+}
+.mycenter{
+  flex: 1;
+}
+.myright{
+  width:40rpx;
+  height: 40rpx;
+  margin-top: 5px;
+}

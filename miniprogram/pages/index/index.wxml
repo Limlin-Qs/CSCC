@@ -1,0 +1,46 @@
+<!--index.wxml-->
+<!--pages/kj/demo113-layout/index.wxml-->
+<view class='box' style='font-family:黑体; font-size:30px;'>
+  <view class="title">茶束初创</view>
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular="{{circular}}" vertical="{{vertical}}" duration="{{duration}}">
+    <block wx:for="{{background}}" wx:key="{{index}}">
+      <swiper-item>
+        <view class="{{item}}"></view>
+      </swiper-item>
+    </block>
+  </swiper> 
+</view>
+<!-- 选择条目 -->
+<include src='header.wxml' /> 
+<!-- music -->
+<view class="box">
+  <view class="title">原创音乐</view>
+  <image src="{{imgSrc}}" bindtap="tapCat" mode="top"></image>
+  <audio id = "myAudio" poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{src}}" controls loop></audio>
+  <!-- 运行失败了 -->
+  <view class="btnLayout">
+    <button bindtap="audioPlay">播放</button>
+    <button bindtap="audioPause">暂停</button>
+    <button bindtap="audiotime">since</button>
+    <button bindtap="audioPlay">restart</button>
+  </view>
+</view>
+
+<view class='box'>
+  <view class="title">团队合作</view>
+  <view class="videoLayout">
+    <video id="myVideo" src="/video/vikings1_1.mkv" danmu-list="{{danmuList}}" enable-danmu danmu-btn controls></video>
+  </view>
+  <view>    
+    <view class="view">弹幕内容</view>
+    <input bindblur="inputBlur" type="text" placeholder="请在此处输入弹幕内容" />
+    <button type="primary" bindtap="sendDanmu">发送弹幕</button>
+  </view>
+</view>
+<view class="box">
+  <view class="designers">
+        <text>初创设计师：琳妲君</text>
+  </view>
+</view>
+<view class="theme">初创未来：sans-serif，创造你想要的一切。 </view>
+<include src='footer.wxml' /> 

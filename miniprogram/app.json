@@ -1,0 +1,60 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/index/analysis/analysis",
+    "pages/index/designer/designer",
+    "pages/logs/logs",
+    "pages/account/account",
+    "pages/type/categories",
+    "pages/currency-conversion/crcv",
+    "pages/transport/transport",
+    "pages/templates/comment",
+    "pages/type/purchase/fv",
+    "pages/type/purchase/ro",
+    "pages/type/purchase/ma",
+    "pages/type/purchase/cl",
+    "pages/account/signup/signup",
+    "pages/account/set/set",
+    "pages/type/cvb/cvb"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "茶束初创",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#0aafff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/pic/6.jpg"
+      },
+      {
+        "pagePath": "pages/type/categories",
+        "text": "分类",
+        "iconPath": "/pic/3.jpg"
+      },
+      {
+        "pagePath": "pages/currency-conversion/crcv",
+        "text": "汇率",
+        "iconPath": "/pic/5.jpg"
+      },
+      {
+        "pagePath": "pages/transport/transport",
+        "text": "送货",
+        "iconPath": "/pic/4.jpg"
+      },
+      {
+        "pagePath": "pages/account/account",
+        "text": "账号",
+        "iconPath": "/pic/2.jpg"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "cloud": true
+}

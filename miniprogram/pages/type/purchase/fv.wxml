@@ -1,0 +1,7 @@
+<!--pages/type/fv/fv.wxml-->
+<view class="box">
+  <view class="title">果蔬</view>
+  <import src='../purchase/template.wxml' />
+  <template is="purchase" data="{{type, src}}" />
+  -------------------------
+</view>
